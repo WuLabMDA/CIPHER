@@ -135,7 +135,7 @@ pretraining/configs/pretrain.yaml
 
 The provided configuration reproduces the settings supplied with the original source code, including:
 
-- 3D input patches of `96 × 96 × 32`
+- 3D input patches of `96 × 96 × 96`
 - batch size of `4`
 - two random crops per input volume
 - AdamW optimizer
