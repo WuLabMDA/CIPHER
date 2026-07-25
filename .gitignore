@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.env
+
+# IDE / notebooks
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Training outputs
+outputs/
+logs/
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.tfevents.*
+
+# Data
+data/
+*.nii
+*.nii.gz
+*.dcm
+
+# System
+.DS_Store
+Thumbs.db

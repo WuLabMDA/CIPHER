@@ -1,0 +1,71 @@
+# Paths are resolved from the repository working directory.
+logdir: outputs/pretraining
+datalist: pretraining/jsons/SwinUNETRPretraining.json
+data_root: null
+resume: null
+
+seed: 42
+epochs: 300
+eval_num: 10000
+log_every: 50
+warmup_steps: 500
+
+# Swin Transformer
+in_channels: 1
+feature_size: 48
+spatial_dims: 3
+patch_size: 2
+window_size: 7
+depths: [2, 2, 2, 2]
+num_heads: [3, 6, 12, 24]
+use_v2: true
+use_checkpoint: false
+dropout_path_rate: 0.0
+
+# Preprocessing settings from the supplied training configuration.
+a_min: -1000
+a_max: 400
+b_min: 0.0
+b_max: 1.0
+
+# The original uploaded loader did not apply Spacingd. Keep false to preserve
+# that behavior. Confirm the final manuscript experiment before public release.
+apply_spacing: false
+space_x: 0.8
+space_y: 0.8
+space_z: 2.5
+
+roi_x: 96
+roi_y: 96
+roi_z: 32
+
+# Data loading
+batch_size: 4
+num_workers: 8
+sw_batch_size: 2
+dataset_type: standard
+cache_rate: 0.5
+smartcache_replace_rate: 1.0
+smartcache_cache_num: null
+
+# Optimization
+optimizer: adamw
+lr: 6.0e-6
+weight_decay: 0.1
+momentum: 0.9
+lr_decay: true
+lr_schedule: warmup_cosine
+grad_clip: false
+max_grad_norm: 1.0
+amp: false
+
+# SSL losses and masking augmentation
+rotation_weight: 1.0
+contrastive_weight: 1.0
+reconstruction_weight: 1.0
+contrastive_temperature: 0.5
+max_drop: 0.3
+max_block_size: 0.25
+block_tolerance: 0.05
+
+dist_url: env://

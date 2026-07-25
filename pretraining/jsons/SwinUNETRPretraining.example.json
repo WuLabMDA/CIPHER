@@ -1,0 +1,10 @@
+{
+  "training": [
+    {"image": "train/patient_0001.nii.gz"},
+    {"image": "train/patient_0002.nii.gz"}
+  ],
+  "validation": [
+    {"image": "validation/patient_0101.nii.gz"},
+    {"image": "validation/patient_0102.nii.gz"}
+  ]
+}
