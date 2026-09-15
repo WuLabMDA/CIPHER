@@ -8,7 +8,7 @@
 
 - **Pretreatment ICI-P Risk Prediction:** Estimates ICI-P risk directly from baseline chest CT scans before immune checkpoint inhibitor therapy.
 - **Large-Scale Foundation-Model Pretraining:** Developed using 590,284 axial CT slices from 4,242 CT scans representing 2,500 patients with non-small cell lung cancer.
-- **Self-Supervised Transformer Architecture:** Uses a 3D Swin Transformer encoder with rotation prediction, contrastive representation learning, and image reconstruction objectives.
+- **Self-Supervised Transformer Architecture:** Uses a 3D Swin Transformer encoder with contrastive representation learning, and image reconstruction objectives.
 - **Reconstruction-Derived Risk Score:** Uses reconstruction error within the segmented lung volume as a quantitative imaging biomarker rather than a conventional supervised binary-classification output.
 - **Internal and External Validation:** Evaluated in an internal MD Anderson cohort and independently validated in a Johns Hopkins cohort.
 - **Interpretable Risk Localization:** Model-derived heatmaps highlight pulmonary regions contributing to elevated predicted risk, including clinically relevant interstitial and parenchymal patterns.
@@ -141,7 +141,7 @@ The provided configuration reproduces the settings supplied with the original so
 - AdamW optimizer
 - learning rate of `6 × 10⁻⁶`
 - 500 warmup steps followed by cosine decay
-- 300 epochs
+- 1000 epochs
 - rotation, contrastive, and L1 reconstruction losses
 - random block masking and cross-sample block replacement
 
