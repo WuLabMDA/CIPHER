@@ -218,4 +218,4 @@ This repository is provided for research and reproducibility. CIPHER is not a cl
 
 ## Contact
 
-For questions, contributions, or issues, please open a GitHub issue or contact the corresponding research team.
+For questions, contributions, or issues, please open a GitHub issue or contact: muneeramgad@gmal.com.
