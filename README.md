@@ -142,7 +142,7 @@ The provided configuration reproduces the settings supplied with the original so
 - learning rate of `6 × 10⁻⁶`
 - 500 warmup steps followed by cosine decay
 - 1000 epochs
-- rotation, contrastive, and L1 reconstruction losses
+- contrastive, and L1 reconstruction losses
 - random block masking and cross-sample block replacement
 
 ### Single-GPU training
@@ -200,11 +200,15 @@ The executable fine-tuning scripts were not included in the source files used to
 If you use CIPHER, please cite the associated work. The publication information should be updated after the final article is published.
 
 ```bibtex
-@unpublished{Muneer2026CIPHER,
-  title  = {{CT}-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer},
-  author = {Muneer, Amgad and Showkatian, Eman and Kitsel, Yuliya and Saad, Maliazurina B. and Sujit, Sheeba J. and Soto, Felipe and Shroff, Girish S. and Faiz, Saadia A. and Ghanbar, Mohammad I. and Ismail, Sherif M. and Vokes, Natalie I. and Cascone, Tina and Le, Xiuning and Zhang, Jianjun and Byers, Lauren A. and Jaffray, David and Chang, Joe Y. and Liao, Zhongxing and Naing, Aung and Gibbons, Don L. and Vaporciyan, Ara A. and Heymach, John V. and Suresh, Karthik S. and Altan, Mehmet and Sheshadri, Ajay and Wu, Jia},
-  year   = {2026},
-  note   = {Manuscript under review}
+@article{Muneer2026CIPHER,
+  title   = {{CT}-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer},
+  author  = {Muneer, Amgad and Showkatian, Eman and Kitsel, Yuliya and Saad, Maliazurina B. and Sujit, Sheeba J. and Soto, Felipe and Shroff, Girish S. and Faiz, Saadia A. and Ghanbar, Mohammad I. and Ismail, Sherif M. and Vokes, Natalie I. and Cascone, Tina and Le, Xiuning and Zhang, Jianjun and Byers, Lauren A. and Jaffray, David and Chang, Joe Y. and Liao, Zhongxing and Naing, Aung and Gibbons, Don L. and Vaporciyan, Ara A. and Heymach, John V. and Suresh, Karthik S. and Altan, Mehmet and Sheshadri, Ajay and Wu, Jia},
+  journal = {Journal for ImmunoTherapy of Cancer},
+  year    = {2026},
+  volume  = {14},
+  number  = {9},
+  pages   = {e015014},
+  url     = {https://jitc.bmj.com/content/14/9/e015014}
 }
 ```
 
